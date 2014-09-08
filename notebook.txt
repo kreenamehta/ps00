@@ -1,0 +1,22 @@
+Date	Who	Start	Stop	Interruptions	Question			TimeOnTask(hours)		Comments
+09/03	KM	02:00	02:15	0		Preparing laptop-1		00:15				Sign up for CCIS account
+09/04	KM	08:00	08:25	5		Preparing laptop-2		00:20				Installing Office 365 and getting powerpoint on laptop
+09/04	KM	14:30	15:00	5		Preparing laptop-6		00:25				Signup for Github
+09/04	KM	17:15	17:45	10		Preparing laptop-3		00:20				Sign up for CS 5010 on piazza.com
+09/04	KM	17:45	17:50	0		Preparing laptop-4		00:05				Checking for wireless connectivity of laptop for NUWave
+09/04	KM	18:00	18:30	12		Preparing laptop-5		00:18				Downloading and installing Racket
+
+										Total time:01:53
+
+09/06	KM	15:10	15:30	13		Activity 1-Ex 1			00:07				Execution of Ex 1
+09/06	KM	15:30	15:36	0		Activity 1-Ex 2			00:06				Execution of Ex 2
+09/06 	KM	15:37	15:45	0		Activity 1-Ex 3			00:08				Execution of Ex 3
+09/06	KM	15:50	16:05	4		Activity 1-Ex 4			00:11				Execution of Ex 4
+09/06	KM	16:05	16:07	0		Activity 1-Ex 5			00:02				Execution of Ex 5
+09/06	KM	16:10	16:23	3		Activity 1-Ex 6			00:20				Execution of Ex 6
+09/06	KM	16:25	16:28	0		Activity 1-Ex 7			00:03				Execution of Ex 7
+09/06	KM	16:28	16:31	1		Activity 1-Ex 8			00:02				Execution of Ex 8
+09/07	KM	08:30	08:55	14		Activity 1-Ex 9			00:11				Execution of Ex 9 (Part 1, 3)
+09/07	KM	09:05	09:25	0		Activity 1-Ex 10		00:20				Execution of Ex 10
+09/07	KM	10:15	11:30	10		Activity 1-Ex 9			01:05				Execution of Ex 9 (Part 2- incomplete)
+										Total time:03:02 	

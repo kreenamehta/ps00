@@ -1,0 +1,159 @@
+Ex 1: Write an expression whose value s the number of seconds in a leap year (a leap year has 366 days). Next, write 2 more expressions that have the same value.
+
+> (* 60(* 60(* 366 24)))
+31622400
+
+>(-(sqr(* (+ (- 2124.56767436 1992) 300) 13)) 0.0003060112382224)
+31622400
+
+>(-(* (*( sqr 77 ) 84) 96)16189056)
+31622400
+
+
+Ex 2: Write an expression that returns true if the result of 100/3 is greater than the result of (100 + 3) / (3 + 3) and false otherwise.
+
+>(> (/ 100 3)
+   ( / 
+     (+ 100 3)
+     (+ 3 3)
+    )
+  ) 
+    
+
+true
+
+Ex 3: Write the definition of a function that converts a temperature from degrees Fahrenheit to degrees Celsius. The formula for the conversion is C = (F-32) * (5/9) . The contract, purpose statement and examples for this function are:
+
+    ; f->c : Number -> Number
+    ; GIVEN: a temperature in degrees Fahrenheit as an argument
+    ; RETURNS: the equivalent temperature in degrees Celsius.
+    ; Examples:
+    ; (f->c 32)  => 0
+    ; (f->c 100) => 37.77777777777778
+
+>(define (c f) (*(- f 32)(/ 5 9))) 
+> (c 32)
+0
+> (c 100)
+37.7
+
+
+Ex 4: Define a function called tip that takes two arguments, a number representing the amount of a bill in dollars, and a decimal number between 0.0 and 1.0, representing the percentage of tip one wants to give (e.g. 0.15 = 15%). tip should return the amount of the tip in dollars. The contract, purpose statement, and examples of tip are the following:
+
+    ; tip : NonNegNumber Number[0.0,1.0] -> Number
+    ; GIVEN: the amount of the bill in dollars and the
+    ; percentage of tip
+    ; RETURNS: the amount of the tip in dollars.
+    ; Examples:
+    ; (tip 10 0.15)  => 1.5
+    ; (tip 20 0.17)  => 3.4
+
+> (tip 10 0.15)
+1.5
+> (tip 20 0.17)
+3.4
+> (tip 10 1.5)
+"Invalid input"
+
+
+Ex 5: Define a function called sq that computes the square of a number. Write the contract, purpose statement, examples and definition of this function. Follow the examples of contracts and purpose statements above.
+
+(define (sq Number)  (* Number Number))
+
+;sq-> Number : Number-> Number
+;GIVEN : a number as an argument
+;RETURN : a square of a number
+;Examples:
+;(sq 10) => 100
+;(sq 71) => 5041
+
+> (sq 10)
+100
+> (sq 71)
+5041
+
+
+Ex 6: One of the solutions of the quadratic equation is given by the formula:
+
+x_+ = \frac{-b + \sqrt {b^2-4ac}}{2a}
+Write the contract, purpose statement, examples, and definition of a function quadratic-root that takes as arguments a, b, and c, and computes the root of the corresponding quadratic equation.
+
+
+(define (quadratic-root a b c) (/(- (sqrt (-(sqr b) (* 4 (* a c) ) )) b ) (* 2 a)))
+
+
+;quadratic-root : a b c -> Number
+;GIVEN : the factors of the quadratic equation
+;RETURN : the quadratic root of the factors
+;Examples : 
+;(quadratic-root 1 2 1) => -1
+;(quadratic-root 1 4 4) => -2
+
+
+
+Ex 7: Define a function called circumference that computes the circumference of a circle. The contract, purpose statement, and usage of circumference are:
+
+    ; circumference : Number -> Number
+    ; GIVEN: the radius r of a circle 
+    ; RETURNS: its circumference, using the formula 2 * pi * r.
+    ; Examples:
+    ; (circumference 1)  =>  6.283185307179586 
+    ; (circumference 0)  =>  0
+(pi is a predefined constant in Racket) Test your function with at least the given examples.
+
+(define (circumference r)(* 2 (* pi r)))
+
+> (circumference 1)
+#i6.283185307179586
+> (circumference 0)
+0
+
+
+
+Ex 8: The area included in a circle of radius r is given by the formula pi * r^2. Using the interaction window of DrRacket as a calculator, compute the area included in circles of radius 1, 5, and 7.
+
+Write the contract, purpose statement, examples, and the definition of a function called circle-area that computes the area included in a circle of radius r, using the above formula. Use the three calculations you did above as your examples.
+
+
+(define (circle-area r)(* pi ( sqr r)))
+
+;circle-area -> r : Number -> Number
+;GIVEN : the radius of the circle
+;RETURNS : the area of the circle
+;Examples : 
+;(circle-area 1)
+;#i3.141592653589793
+;(circle-area 5)
+;#i78.53981633974483
+;(circle-area 7)
+;#i153.93804002589985
+
+
+Ex 9: Find out what the operator remainder does by typing it in the definitions window, highlighting it, and pressing F1.
+
+Try applying remainder on some examples to make sure you understand what it does. (what is its difference with modulo?)
+
+Define a predicate even? that takes a number as an argument and returns true if this number is divisible by 2, and false otherwise. (You will probably need to use remainder or something similar in the implementation of even?.)
+
+file:///Applications/Racket%20v6.1/doc/search/index.html?q=remainder
+
+>(define (even x)
+  (cond[(= 0 (remainder x 2))true]
+       [else false]))
+
+> (even 4)
+true
+> (even 5)
+false
+
+
+Ex 10: Define a function that takes three numbers as arguments and returns the sum of the two larger numbers. As always, write down contract, purpose statement, and examples.
+
+(define (sum a b c)(cond [(and (> a c) (> b c ))(+ a b)][(and (> b a)(> c a))(+ b c)][(and(> c b)(> a b))(+ c a)]))
+
+> (sum 4 5 6)
+11
+> (sum 8 1 9)
+17
+> (sum 8 10 62)
+72

@@ -20,3 +20,24 @@ Date	Who	Start	Stop	Interruptions	Question			TimeOnTask(hours)		Comments
 09/07	KM	09:05	09:25	0		Activity 1-Ex 10		00:20				Execution of Ex 10
 09/07	KM	10:15	11:30	10		Activity 1-Ex 9			01:05				Execution of Ex 9 (Part 2- incomplete)
 										Total time:03:02 	
+
+
+
+09/11	KM	09:00	09:05	0		Activity 1-Ex 11		00:05				Execution of Ex 11
+09/11	KM	09:06	09:08	0		Activity 1-Ex 12		00:02				Execution of Ex 12
+09/11	KM 	09:08	09:10	0		Activity 1-Ex 13		00:02				Execution of Ex 13
+09/11	KM 	09:11	09:14	1		Activity 1-Ex 14		00:02				Execution of Ex 14
+09/11	KM	09:15	09:20	0		Activity 1-Ex 15		00:05				Execution of Ex 15
+09/12	KM	12:05	12:30	5		Activity 1-Ex 16		00:20				Execution of Ex 16	
+09/12	KM	12:30	12:55	0		Activity 1-Ex 17		00:25				Execution of Ex 17
+09/12	KM	13:00	14:20	30		Activity 1-Ex 18		00:50				Execution of Ex 18
+09/12	KM 	14:25	15:00	0		Activity 1-Ex 19		00:35				Execution of Ex 19
+09/13	KM	17:00	17:10	0		Activity 1-Ex 20		00:10				Execution of Ex 20
+09/13	KM	17:11	17:20	1		Activity 1-Ex 21		00:08				Execution of Ex 21
+09/13	KM	17:25	17:27	0		Activity 1-Ex 22		00:08				Execution of Ex 22
+09/13	KM	17:30	17:45	5		Activity 1-Ex 23		00:10				Execution of Ex 23
+09/13	KM	18:00	19:20	20		Activity 1-Ex 24		00:60				Execution of Ex 24
+09/13	KM	19:30	20:35	10		Activity 1-Ex 21a		00:55				Execution of Ex 21a
+09/14	KM	09:00	10:40	10		Activity 1-Ex 25		00:80				Execution of Ex 25
+09/13	KM	10:40	11:15	0		Activity 1-Ex 21		00:35				Execution of Ex 26
+09/13	KM	17:11	17:20	1		Activity 1-Ex 21		00:08				Execution of Ex 21
